@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Classificate users</title>
+</head>
+<body class="my-10 mx-40">
+    <h1 class="text-6xl">KNN Algorithm</h1>
+    <h1 class="text-xl mt-2">Populate data by picking a color and clicking on the square, it will assosiate the X and Y position with the chosen color.</h1>
+    <h1 class="text-xl">If <strong>predict mode</strong> is enabled, when you click on the square the color will be predicted based on the nearest dots.</h1>
+    <div class="mt-10 flex align-center justify-around">
+        <div>
+            <label for="predict">Predict Mode</label>
+            <input type="checkbox" id="predict" name="predict" class="mr-3"/>
+            <label for="colorpicker">Dot color</label>
+            <input type="color" name="colorpicker" id="colorpicker" value="#0000ff">
+            <br/>
+            <canvas id="imgCanvas" width="300" height="300" style="border: 1px solid black; margin-top: 20px"></canvas>
+                <button onclick="resetCanvas()" class="mt-5 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full">Reset</button>
+        </div>
+    </div>
+    <script src="KNN.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

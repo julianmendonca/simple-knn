@@ -1,2 +1,2 @@
 # simple-knn
-A simple graphic demonstration of KNN algorithm
+A simple graphic demonstration of KNN algorithm.
